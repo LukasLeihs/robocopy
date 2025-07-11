@@ -18,6 +18,7 @@ Write-Host "
 ║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
 ║                                  v2.0 - 2025                                    ║
 ║                         Erstellt für maximale Effizienz                         ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
 ╚══════════════════════════════════════════════════════════════════════════════════╝
 " -ForegroundColor Cyan
 
@@ -77,6 +78,14 @@ function Get-ValidPath {
 
 # Geführte Konfiguration
 function Start-GuidedConfiguration {
+    Clear-Host
+    Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+    
     Write-Host "`n🎯 GEFÜHRTE ROBOCOPY-KONFIGURATION" -ForegroundColor Cyan
     Write-Host "═══════════════════════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
     
@@ -215,6 +224,14 @@ function Start-GuidedConfiguration {
 
 # Schnellmodus Profile
 function Start-QuickMode {
+    Clear-Host
+    Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+    
     Write-Host "`n⚡ SCHNELLMODUS - VORDEFINIERTE PROFILE" -ForegroundColor Cyan
     Write-Host "═══════════════════════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
     
@@ -267,6 +284,14 @@ function Start-QuickMode {
 
 # Log-Analyse
 function Analyze-RobocopyLogs {
+    Clear-Host
+    Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+    
     Write-Host "`n📊 ROBOCOPY-LOG ANALYSE" -ForegroundColor Cyan
     Write-Host "═══════════════════════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
     
@@ -346,6 +371,14 @@ function Analyze-RobocopyLogs {
 
 # Performance Monitor
 function Start-PerformanceMonitor {
+    Clear-Host
+    Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+    
     Write-Host "`n📈 PERFORMANCE-MONITOR" -ForegroundColor Cyan
     Write-Host "═══════════════════════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
     
@@ -409,6 +442,14 @@ function Start-PerformanceMonitor {
 
 # Hilfe & Tipps
 function Show-Help {
+    Clear-Host
+    Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+    
     Write-Host "`n❓ HILFE & TIPPS" -ForegroundColor Cyan
     Write-Host "═══════════════════════════════════════════════════════════════════════════════════" -ForegroundColor Cyan
     
@@ -458,6 +499,16 @@ function Show-Help {
 
 # Hauptprogramm
 do {
+    Clear-Host
+    Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                                  v2.0 - 2025                                    ║
+║                         Erstellt für maximale Effizienz                         ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+    
     # Schnellmodus-Parameter prüfen
     if ($QuickMode -ne "") {
         switch ($QuickMode.ToLower()) {
@@ -488,25 +539,59 @@ do {
         "2" { Start-QuickMode }
         "3" { Analyze-RobocopyLogs }
         "4" { 
+            Clear-Host
+            Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
             Write-Host "`n🔧 Erweiterte Optionen werden in der nächsten Version verfügbar!" -ForegroundColor Yellow
-            Start-Sleep -Seconds 2
+            Write-Host "`nDrücke eine beliebige Taste, um fortzufahren..." -ForegroundColor Gray
+            $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
         }
         "5" { 
+            Clear-Host
+            Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
             Write-Host "`n💾 Backup-Assistent startet..." -ForegroundColor Green
+            Start-Sleep -Seconds 1
             Start-QuickMode
         }
         "6" { 
-            Write-Host "`n🌐 Netzwerk-Sync..." -ForegroundColor Blue
+            Clear-Host
+            Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+            Write-Host "`n🌐 Netzwerk-Sync startet..." -ForegroundColor Blue
+            Start-Sleep -Seconds 1
             Start-QuickMode
         }
         "7" { Start-PerformanceMonitor }
         "8" { Show-Help }
         "9" { 
-            Write-Host "`n👋 Auf Wiedersehen!" -ForegroundColor Green
+            Clear-Host
+            Write-Host "
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 ULTIMATE ROBOCOPY TOOL 🚀                          ║
+║                          © 2025 Lukas Leihs - Alle Rechte vorbehalten          ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+" -ForegroundColor Cyan
+            Write-Host "`n👋 Vielen Dank für die Nutzung des Ultimate Robocopy Tools!" -ForegroundColor Green
+            Write-Host "   Entwickelt von Lukas Leihs - 2025" -ForegroundColor Yellow
+            Write-Host "`n🚀 Bis zum nächsten Mal!" -ForegroundColor Cyan
+            Start-Sleep -Seconds 2
             exit 
         }
         default { 
-            Write-Host "❌ Ungültige Auswahl! Bitte wähle 1-9." -ForegroundColor Red
+            Write-Host "`n❌ Ungültige Auswahl! Bitte wähle 1-9." -ForegroundColor Red
             Start-Sleep -Seconds 2
         }
     }
